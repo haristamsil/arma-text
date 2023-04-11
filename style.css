@@ -1,0 +1,213 @@
+body {
+  min-width: 250px;
+}
+#editor {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+  color: rgb(121, 121, 121);
+  text-align: justify;
+  min-height: 200px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 8px -1px #00000093;
+  border-radius: 0px 0px 10px 10px;
+}
+.formattext {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px -1px #00000093;
+}
+.formattext button,
+#formatSelect {
+  min-width: 30px;
+  font-size: 15px;
+  padding: 3px;
+  background-color: rgb(245, 245, 245);
+  border: 2px white solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px -1px #00000093;
+  color: rgb(121, 121, 121);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+legend {
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0px 0px 5px -1px #00000093;
+  border-radius: 6px;
+  border: rgb(255, 255, 255) 3px solid;
+  color: rgb(121, 121, 121);
+  padding: 1px 5px;
+  position: absolute;
+  margin-left: px;
+  margin-top: -35px;
+}
+fieldset {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(248, 247, 247);
+  box-shadow: 0px 0px 8px -1px #00000065;
+  border: 4px solid white;
+  padding-top: 20px;
+}
+fieldset input {
+  width: 100%;
+  background: none;
+  border: 0;
+}
+#editor iframe {
+  width: 100%;
+}
+#media-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 8px -1px #00000065;
+}
+#media-container iframe {
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+}
+#judul {
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(248, 247, 247);
+  box-shadow: 0px 0px 8px -1px #00000065;
+  border: 4px solid white;
+  font-size: 20px;
+  text-align: justify;
+  text-transform: uppercase;
+}
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(121, 121, 121);
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px -1px #00000093;
+}
+input:focus {
+  outline: none;
+}
+div:focus {
+  outline: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px -1px #00000063;
+  background-color: rgb(248, 248, 248);
+  border: 2px white solid;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(243, 243, 243);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff23;
+  backdrop-filter: blur(2px);
+  width: auto;
+  padding: 5px;
+  margin-top: -27px;
+  margin-left: -5px;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.226);
+}
+
+.dropdown-content button {
+  float: none;
+  color: rgb(121, 121, 121);
+  min-width: 60px;
+  padding: 5 px;
+  text-decoration: none;
+  margin: 3px;
+  display: block;
+  text-align: left;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 592px) {
+  .formattext {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px -1px #00000093;
+  }
+  .formattext button,
+  #formatSelect {
+    min-width: 20px;
+    font-size: 8px;
+    padding: 1px;
+    background-color: rgb(245, 245, 245);
+    border: 2px white solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -1px #00000093;
+    color: rgb(121, 121, 121);
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    margin-top: -27px;
+    margin-left: -5px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.226);
+  }
+
+  .dropdown-content button {
+    float: none;
+    color: rgb(121, 121, 121);
+    min-width: 40px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 3px;
+    display: block;
+    text-align: left;
+    text-align: center;
+  }
+}
